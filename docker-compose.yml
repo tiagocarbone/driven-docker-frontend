@@ -1,0 +1,12 @@
+services:
+  frontend:
+    image: myfrontend     
+    build: .              
+    ports:
+      - "8080:80"
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    name: mynetwork
